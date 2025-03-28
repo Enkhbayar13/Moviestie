@@ -8,7 +8,7 @@ import {
 
 export const Nowplaying = () => {
   return (
-    <Carousel className="flex h-[600px] w-full  relative ">
+    <Carousel className="flex h-[8s00px] w-full  relative ">
       <CarouselContent>
         <CarouselItem>
           <img

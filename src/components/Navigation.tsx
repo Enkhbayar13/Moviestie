@@ -1,11 +1,29 @@
+"use client";
 import { Dropdown } from "./Dropdown";
 import { Button } from "./ui/button";
 import { Input } from "@/components/ui/input";
-import React from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 import { IoIosSearch } from "react-icons/io";
 import { IoMoonOutline } from "react-icons/io5";
 
 export const Navigation = () => {
+  const [data, setData] = useState([]);
+
+  const fetchGenres = async () => {
+    const response = await axios.get(
+      "https://api.themoviedb.org/3/genre/movie/list?language=en&api_key=d67d8bebd0f4ff345f6505c99e9d0289"
+    );
+
+    setData(response.data.genres);
+  };
+
+  useEffect(() => {
+    fetchGenres();
+  }, []);
+
+  console.log(data, "data");
   return (
     <div className="flex h-[59px] justify-between w-full p-[16px] items-center  bg-[#fff]">
       <div className="flex justify-between items-center gap-[8px]">
