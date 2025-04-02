@@ -42,7 +42,7 @@ export const Dropdown = () => {
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           {movieGenre.map((value) => {
-            return <Badge>test</Badge>;
+            return <Badge></Badge>;
           })}
         </DropdownMenuItem>
       </DropdownMenuContent>

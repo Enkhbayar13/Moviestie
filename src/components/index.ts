@@ -7,3 +7,4 @@ export * from "./Header1";
 export * from "./Popular1";
 export * from "./Toprated1";
 export * from "./Footercont";
+export * from "./Nowplayingdiscription";

@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <div className=" flex flex-col relative gap-4 items-center w-[1440px] ">
+    <div className=" flex flex-col relative gap-4 items-center  h-fit py-[52px] px-20 w-[1440px] ">
       <Navigation></Navigation>
       <Nowplaying></Nowplaying>
 
