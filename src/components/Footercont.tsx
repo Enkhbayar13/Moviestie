@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 
 export const Footercont = () => {
   return (
-    <div className="flex h-[280px]  flex-start justify-between w-[1440px] pt-10 px-20 bg-[#4338CA]">
+    <div className="flex h-[280px]  flex-start justify-between w-full pt-10 px-20 bg-[#4338CA]">
       <div className="flex flex-col items-start w-[240px] gap-[8px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"

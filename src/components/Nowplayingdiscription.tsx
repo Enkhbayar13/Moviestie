@@ -11,25 +11,30 @@ export const Nowplayingdiscrition = ({
   content,
 }: NowplayingProps) => {
   return (
-    <div className="absolute top-[178px] left-[148px] z-20 flex w-[400px] h-[400px] flex-col">
-      <div>
-        <h1 className="size-[16px] font-normal text-[24px] font-inter text-[#FFF]">
+    <div className="absolute top-[178px] left-[148px] z-20 gap-4 flex w-[404px] h-auto flex-col ">
+      <div className="flex w-[400px] items-start">
+        <h1 className="  font-normal text-[26px] font-[inter] text-[#FFF]">
           Now Playing:
         </h1>
       </div>
-      <div className="flex   ">{title}</div>
 
-      <Star fill="yellow" color="yellow"></Star>
-      <p>
-        {rating}
-        <span className="text-[#71717A]">/10</span>
-      </p>
+      <div className="flex text-[#FFF] w-[400px] h-[fit] font-bold font-[inter]  text-[36px]">
+        {title}
+      </div>
 
-      <div className="flex h-[80px] w-[302px]">{content}</div>
-
-      <Button className="flex w-[145px] h-[40px] p-[8px] items-center gap-[8px] justify-center bg-[#F4F4F5] text-black">
-        Watch Trailer
-      </Button>
+      <div className="flex h-auto  w-[302px] text-[#FFF]">{content}</div>
+      <div className="flex content-start   ">
+        <Star fill="yellow" color="yellow"></Star>
+        <p className="text-[#FFF]">
+          {rating}
+          <span className="text-[#FFF]">/10</span>
+        </p>
+      </div>
+      <div className=" flex ">
+        <Button className="flex w-[145px] h-[40px] p-[8px] items-center gap-[8px] justify-center bg-[#F4F4F5] text-black">
+          Watch Trailer
+        </Button>
+      </div>
     </div>
   );
 };
