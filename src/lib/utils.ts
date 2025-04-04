@@ -14,9 +14,9 @@ export const axiosInstance = axios.create({
   },
 });
 
-export const backdropUrl = (path: string) => {
+export const backdropUrl = (path?: string) => {
   return `https://image.tmdb.org/t/p/original${path}`;
 };
-export const posterUrl = (path: string) => {
+export const posterUrl = (path?: string): string => {
   return `https://image.tmdb.org/t/p/w300${path}`;
 };
