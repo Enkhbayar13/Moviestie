@@ -15,7 +15,6 @@ export default function Home() {
       <Upcomingmovies></Upcomingmovies>
       <Popular1></Popular1>
       <Toprated1></Toprated1>
-
       <Paginationshd></Paginationshd>
     </div>
   );

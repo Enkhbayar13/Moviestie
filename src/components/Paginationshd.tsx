@@ -15,7 +15,7 @@ export const Paginationshd = () => {
           <PaginationPrevious href="#" />
         </PaginationItem>
         <PaginationItem>
-          <PaginationLink href="#">1</PaginationLink>
+          <PaginationLink href="#"></PaginationLink>
         </PaginationItem>
         <PaginationItem>
           <PaginationEllipsis />

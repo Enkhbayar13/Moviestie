@@ -30,7 +30,12 @@ export const Navigation = () => {
       <div className="flex justify-between items-center gap-[8px]">
         <Film />
 
-        <p className="text-[#4338CA] text-[16px] font-bold italic ">Movie Z</p>
+        <a
+          href="http://localhost:3000/"
+          className="text-[#4338CA] text-[16px] font-bold italic "
+        >
+          Movie Z
+        </a>
       </div>
       <div className="flex gap-[12px] justify-between items-center">
         <div className="flex w-[97px] h-[36px] p-[8px] items-center justify-center gap-[8px]">

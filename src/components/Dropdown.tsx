@@ -11,6 +11,7 @@ import axios from "axios";
 import { Badge } from "lucide-react";
 import { useEffect, useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
+import { Button } from "./ui/button";
 
 type movieGenreTypes = {
   id: number;
@@ -42,7 +43,7 @@ export const Dropdown = () => {
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           {movieGenre.map((value) => {
-            return <Badge></Badge>;
+            return <Button>{value.name}</Button>;
           })}
         </DropdownMenuItem>
       </DropdownMenuContent>
